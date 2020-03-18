@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nighlands - Joakim Ekbladh</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<div id="intro">
+						<h1>Joakim Ekbladh<br />
+						<p>Game Programmer</p>
+                </div>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+								<li class="active"><a href="../index.html">Home</a></li>
+								<li><a href="../aboutme.html">About me</a></li>
+								<li><a href="../elements.html">Resumé</a></li>
+						</ul>
+						<ul class="icons">
+								<li><a href="https://www.linkedin.com/in/joakim-ekbladh-4b20b1118/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/Ploxie" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h2>Nighlands</h2>
+									<p>
+									The final game made at The Game Assembly<br>
+									</p>
+								</header>
+								<p>
+									For this assignment we got to choose whatever genre we wanted, so we went for a top-down hack-n-slash game.
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit">
+												<a href="../images/Nighlands_1.png" class="image fit"><img src="../images/Nighlands_1.png" alt="" /></a>
+											</span></div>
+											<!-- Break -->
+											<div class="col-4"><span class="image fit">
+												<a href="../images/Nighlands_2.png" class="image fit"><img src="../images/Nighlands_2.png" alt="" /></a>
+											</span></div>
+											<div class="col-4"><span class="image fit">
+													<a href="../images/Nighlands_3.png" class="image fit"><img src="../images/Nighlands_3.png" alt="" /></a>
+											</span></div>
+											<div class="col-4"><span class="image fit">
+													<a href="../images/Nighlands_4.png" class="image fit"><img src="../images/Nighlands_4.png" alt="" /></a>
+											</span></div>
+											<!-- Break -->
+											<div class="col-4"><span class="image fit">
+													<a href="../images/Nighlands_5.png" class="image fit"><img src="../images/Nighlands_5.png" alt="" /></a>
+											</span></div>
+											<div class="col-4"><span class="image fit">
+													<a href="../images/Nighlands_6.png" class="image fit"><img src="../images/Nighlands_6.png" alt="" /></a>
+											</span></div>
+										</div>
+									</div>
+									
+								</p>
+								<p>
+									The game was made in around 5 weeks, full time.<br>
+									Our team consisted of 6 programmers, 2 level designers and 3 graphics artists.<br>
+									My contribution was mainly to create the environment by implementing a procedural generation algorithm.<br>
+									We decided to have the environment generated rather than being created by the level designers because it would give the game
+									more replayability and to maintain the exploration aspect of the game.									
+								</p>
+								<p>
+									The environment was built using a variety of 'modules' that were tilable, allowing for seamless connections.<br>
+									Since each module had different heights, they had to be placed so that every module was accessable, so that the player could finish the level.
+									This was achieved using Perlin-noise.<br>
+
+									On generation, the path were traced from start to finish, and certain 'point of interest'-modules were placed along the path.
+									This made sure that, for example, the Boss-levels were guaranteed to have a Boss-module.<br><br>
+									Every level also had a 'Difficulty'-value, that increased for every level. This value determined how many hostile creatures would be on the map.
+									Let's say that the first level had a difficulty-value = 1, then after the generation of the terrain, it would spawn a creature worth 1 'difficulty point'.
+									While if the level would have a difficulty-value of for example 3, then the level could spawn with either 3 low-difficulty creatures or 1 high-difficulty creature.<br>
+									This meant that the further you progressed, the more difficult the levels were.
+								</p>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+						<section class="split contact">
+							<section>
+								<h3>Email</h3>
+								<p><a href="mailto:joakim.ekbladh@gmail.com">Joakim.Ekbladh@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+                                    <li><a href="https://www.linkedin.com/in/joakim-ekbladh-4b20b1118/" class="icon brands fa-linkedin"><span class="label">Linked In</span></a></li>
+                                    <li><a href="https://github.com/Ploxie" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
