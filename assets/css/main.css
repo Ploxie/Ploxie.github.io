@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:300,700,900, 300italic, 700italic");
 
 /*
 	Massively by HTML5 UP
@@ -148,7 +148,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Merriweather", Georgia, serif;
+		font-family: "Source Sans Pro", Georgia, serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 2.375;
@@ -159,8 +159,6 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		text-decoration: none;
 	}
 
 		a:hover {
@@ -238,10 +236,11 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px;
-		font-style: italic;
+		border-left: solid 2px;
+		font-style: normal;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
+		line-height: 1.5
 	}
 
 	code {
@@ -295,6 +294,7 @@ input, select, textarea {
 	a {
 		color: #212931;
 		border-bottom-color: rgba(33, 41, 49, 0.5);
+		text-decoration: none;
 	}
 
 		a:hover {
@@ -311,7 +311,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: #eeeeee;
+		border-left-color: #c9c9c9;
 	}
 
 	code {
@@ -320,7 +320,7 @@ input, select, textarea {
 	}
 
 	hr {
-		border-bottom-color: #eeeeee;
+		border-bottom-color: #c9c9c9;
 	}
 
 /* Row */
